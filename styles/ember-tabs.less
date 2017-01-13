@@ -8,7 +8,40 @@
   width: 100%;
   text-align: left;
   padding-top:2px;
-  padding-left: 10px;
+  padding-left: 12px;
+  overflow: hidden;
+  white-space: pre;
+  text-overflow: ellipsis;
 }
-.ember-tabs {
+
+// Dave's stylesheet for default dark theme/Molokai
+.tab-bar .tab {
+  max-width: 220px;
+}
+
+.tab-bar .tab:after {
+  right: -13px;
+}
+
+atom-workspace-axis.vertical .tab-bar {
+  height: 50px;
+}
+
+atom-workspace-axis.vertical .tab-bar .tab {
+  height: 40px;
+  padding: 0 0 0 6px;
+  line-height: 18px;
+}
+
+.tab-bar .tab.active, .tab-bar .tab.active:before, .tab-bar .tab.active:after,
+.tab-bar .tab:before, .tab-bar .tab:after {
+  height: 40px !important;
+}
+
+.pod-file-type {
+  color: #ccc;
+}
+
+.tab.active .pod-file-type {
+  color: #66D9EF;
 }
