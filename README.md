@@ -1,3 +1,11 @@
+## FORK: STACK MOD
+
+More informative, double-decker tabs:
+
+![](/ember-tabs-stack.png)
+
+---
+
 # ember-tabs package
 
 Makes atom.io work better with Ember pods.
