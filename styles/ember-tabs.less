@@ -12,7 +12,12 @@
   overflow: hidden;
   white-space: pre;
   text-overflow: ellipsis;
+  line-height: 12px;
+  position: absolute;
+  top:3px;
+  left:0;
 }
+
 
 // Dave's stylesheet for default dark theme/Molokai
 .tab-bar .tab {
@@ -38,10 +43,17 @@ atom-workspace-axis.vertical .tab-bar .tab {
   height: 40px !important;
 }
 
+
 .pod-file-type {
   color: #ccc;
 }
-
+atom-dock .list-inline.tab-bar .tab[data-type="TreeView"].active::after
+{
+  background-color: black;
+}
+atom-workspace-axis.vertical .tab-bar .tab.active::after{
+  background: none;
+}
 .tab.active .pod-file-type {
   color: #66D9EF;
 }
